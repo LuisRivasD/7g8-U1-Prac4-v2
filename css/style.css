@@ -1,0 +1,56 @@
+.triangulo{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(245, 63, 8);
+  animation-name: mueveTriangulo;
+  -webkit-animation-name: mueveTriangulo;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-transform: translate(39em,13.85em);
+  -moz-transform: translate(39em,13.85em);
+  -ms-transform: translate(39em,13.85em);
+  -o-transform: translate(39em,13.85em);
+  transform: translate(39em,13.85em);
+}
+
+.cuadrado{
+  width: 100px;
+  height: 100px;
+  background: rgb(5, 77, 233);
+  position:absolute;
+  bottom:5px;
+  right:10px;
+  animation-name: mueveCuadrado;
+  -webkit-animation-name: mueveCuadrado;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-iteration-count: 1;
+  -ms-transform: translate(39em,13.85em);
+  -webkit-transform: translate(39em,13.85em);
+  -moz-transform: translate(39em,13.85em);
+  -ms-transform: translate(39em,13.85em);
+  -o-transform: translate(39em,13.85em);
+  transform: translate(-39em,-13.85em);
+}
+
+
+@-webkit-keyframes mueveTriangulo {
+  0%{ -webkit-transform: translate(0em,0em); }
+  100%{ -webkit-transform: translate(39em,13.85em); }
+}
+@-webkit-keyframes mueveCuadrado{
+  0%{ -webkit-transform: translate(0em,0em); }
+  100%{ -webkit-transform: translate(-39em,-13.85em); }
+}
+
+@keyframes mueveTriangulo {
+    0%{ transform: translate(0em,0em); }
+    100%{ transform: translate(39em,13.85em); }
+}
+
+@keyframes mueveCuadrado {
+    0%{ transform: translate(0em,0em); }
+    100%{ transform: translate(-39em,-13.85em); }
+}
